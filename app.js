@@ -8,10 +8,10 @@ let tareas = {};
 
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
-    setTarea(e);
+    setTarea();
 });
 
-const setTarea = (e) => {
+const setTarea = () => {
     if(input.value.trim() === ''){
         return/*Al poner el return hacemos que al ingresar al if se deje de producir toda la funcion*/
     }
